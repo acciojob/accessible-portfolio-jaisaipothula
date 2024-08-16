@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation Bar with ARIA Role -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#portfolio">Portfolio</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Heading with ARIA Role -->
+        <h1 role="heading">My Accessible Portfolio</h1>
+
+        <!-- Image with ARIA Role and Alt Attribute -->
+        <img src="profile.jpg" alt="A portrait of the portfolio owner" role="img">
+
+        <!-- Brief Description -->
+        <section>
+            <p>Welcome to my portfolio. I am a web developer with a passion for creating accessible and user-friendly websites.</p>
+        </section>
+
+        <!-- List of Projects -->
+        <section>
+            <h2 role="heading">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Accessible Web Design</li>
+                <li role="listitem">Project 2: ARIA Roles Implementation</li>
+                <li role="listitem">Project 3: Responsive Layouts</li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>
